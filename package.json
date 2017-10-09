@@ -1,0 +1,29 @@
+{
+  "name": "react-express-mysql-experiment",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "ts-node --project ./src --cache-directory ./.ts-cache ./src/bootstrap.ts",
+    "serve": "node ./bin/www",
+    "build": "tsc --project ./src",
+    "schema2dts": "ts-node --project ./scripts --cache-directory ./.ts-cache ./scripts/schemas-to-dts.ts"
+  },
+  "dependencies": {
+    "ajv": "^5.2.3",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "morgan": "~1.9.0",
+    "mysql2": "^1.4.2",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.5",
+    "@types/express": "^4.0.37",
+    "@types/morgan": "^1.7.33",
+    "json-schema-to-typescript": "^4.6.5",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3"
+  }
+}

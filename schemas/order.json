@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Order",
+    "type": "object",
+    "required": ["currency", "quantity", "percent"],
+    "properties": {
+        "currency": { "type": "string", "title": "Currency", "default": "USD" },
+        "quantity": { "type": "number", "title": "Quantity" },
+        "percent": { "type": "integer", "title": "Percent", "minimum": 0, "maximum": 100 },
+        "reference": { "type": "string", "title": "Reference" },
+        "time": { "type": "string", "title": "Time", "format": "date-time" }
+    }
+}
